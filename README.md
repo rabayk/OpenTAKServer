@@ -10,6 +10,20 @@ OpenTAKServer (OTS) is yet another open source TAK Server for ATAK, iTAK, and Wi
 
 Join us on our [Discord server](https://discord.gg/6uaVHjtfXN)
 
+## Repo Scope
+
+This repository contains the OpenTAKServer Python backend. It does not contain the separate Web UI frontend.
+
+The current checkout provides three runnable backend processes:
+- `opentakserver` - the main Flask and Socket.IO application
+- `cot_parser` - the RabbitMQ-backed CoT ingestion and parsing worker
+- `eud_handler` - the TCP or SSL TAK client socket listener
+
+Additional maintainer and deployment documentation for this repository lives in:
+- [docs/repo-scope.md](docs/repo-scope.md)
+- [docs/current-startup.md](docs/current-startup.md)
+- [docs/dockerisation-plan.md](docs/dockerisation-plan.md)
+
 ## Current Features
 - Connect via TCP from ATAK, WinTAK, iTAK, TAKAware, TAKX, CloudTAK, and PyTAK
 - SSL
@@ -61,6 +75,11 @@ OTS can be installed on Windows using WSL and the Ubuntu installer script
 ## Documentation
 
 https://docs.opentakserver.io
+
+This repository-specific documentation complements the public docs:
+- [docs/repo-scope.md](docs/repo-scope.md)
+- [docs/current-startup.md](docs/current-startup.md)
+- [docs/dockerisation-plan.md](docs/dockerisation-plan.md)
 
 ## Supported Languages
 
